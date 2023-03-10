@@ -283,7 +283,7 @@
 .datepicker table tr td.selected:hover[disabled],
 .datepicker table tr td.selected.disabled[disabled],
 .datepicker table tr td.selected.disabled:hover[disabled] {
-  background-color: #808080;
+  background-color: black;
 }
 .datepicker table tr td.selected:active,
 .datepicker table tr td.selected:hover:active,

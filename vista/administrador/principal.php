@@ -270,9 +270,25 @@
             </button>
           </div>
         </nav>
-        <div>
-    <img src="public/asset/images/carousel/logorosa.jpeg" alt="">
-    </div>
+        <div class="card-body">
+                    <h4 class="card-title">Administracion</h4>
+                    <img src="public/asset/images/carousel/logorosa.jpeg" alt="" style="with: 100px;">
+                    <p class="card-description"><code>Aesthetic 90s mc</code></p>
+                    <div class="template-demo">
+                    <a type="button" class="btn btn-primary btn-lg btn-block" href="?controlador=cliente&accion=principal">
+                        <i class="mdi mdi-account"></i>Cliente</a>
+                      <button type="button" class="btn btn-primary btn-lg btn-block">
+                        <i class="mdi mdi-account"></i>Proveedores</button>
+                        <button type="button" class="btn btn-primary btn-lg btn-block">
+                        <i class="mdi mdi-account"></i>Productos</button>
+                        <button type="button" class="btn btn-primary btn-lg btn-block">
+                        <i class="mdi mdi-account"></i>Promociones</button>
+                        <button type="button" class="btn btn-primary btn-lg btn-block">
+                        <i class="mdi mdi-account"></i>Subir al blog</button>
+                        <button type="button" class="btn btn-primary btn-lg btn-block">
+                        <i class="mdi mdi-account"></i>Ver pedidos</button>
+                    </div>
+                  </div>
 		</div>
 		</div>
 			
