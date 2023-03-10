@@ -69,6 +69,26 @@
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
+  <script src="public/assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="public/assets/vendors/chart.js/Chart.min.js"></script>
+    <script src="public/assets/vendors/progressbar.js/progressbar.min.js"></script>
+    <script src="public/assets/vendors/jvectormap/jquery-jvectormap.min.js"></script>
+    <script src="public/assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="public/assets/vendors/owl-carousel-2/owl.carousel.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="public/assets/js/off-canvas.js"></script>
+    <script src="public/assets/js/hoverable-collapse.js"></script>
+    <script src="public/assets/js/misc.js"></script>
+    <script src="public/assets/js/settings.js"></script>
+    <script src="public/assets/js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="public/assets/js/dashboard.js"></script>
+
+
   <script src="public/js/jquery.min.js"></script>
   <script src="public/js/jquery-migrate-3.0.1.min.js"></script>
   <script src="public/js/popper.min.js"></script>
