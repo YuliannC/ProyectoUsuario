@@ -12,7 +12,7 @@ class administrador_controlador{
     // FUNCION UNIR CONTENIDO
     public function  principal(){
         //$this->vista->datos = cliente_modelo::mdlListar();
-        $this->vista->unirContenido("administrador/principal");
+        $this->vista->unirContenido("administrador/principal",false);
         
     }
     //FUNCION LISTAR PQR(PETICIONES,QUEJAS Y SUGERENCSIAS)

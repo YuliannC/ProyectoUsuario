@@ -13,10 +13,10 @@ $products = $conn->query("select * from imagenes where estado=1 ORDER BY cod_ima
 // Apartir de aqui hacemos el recorrido de los productos obtenidos y los reflejamos en una tabla.
 echo "<div class='row'>";
 while ($r = $products->fetch_object()) : ?>
-	<div class="col-lg-3">
-		<div class="card" style="width: 22rem;">
+	<div class="col-lg-4">
+		<div class="card" style="width: 21rem;">
 			<a href="?controlador=productos&accion=detalles&id=<?php echo $r->cod_imagen; ?>">
-				<img src="public/images/productos/<?php echo $r->imagen; ?>" class="card-img-top" alt="Card image cap" >
+				<img src="public/images/productos/<?php echo $r->imagen; ?>" class="card-img-top"  >
 			</a>
 			<div class="card-body">
 				<h2 class="card-title" style="color:black;"><?php echo $r->nombre; ?></h2>

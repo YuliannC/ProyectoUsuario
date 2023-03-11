@@ -11607,7 +11607,7 @@ input[type="button"].btn-block {
   margin-left: -1px;
   line-height: 1.25;
   color: #007bff;
-  background-color: #000000;
+  background-color: #ff5aa4;
   border: 1px solid #dee2e6; }
   .page-link:hover, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button a:hover,
   .jsgrid .jsgrid-pager .jsgrid-pager-page a:hover {
@@ -11917,7 +11917,7 @@ input[type="button"].btn-block {
   overflow: hidden;
   line-height: 0;
   font-size: 0.75rem;
-  background-color: #000000;
+  background-color: #ff5aa4;
   border-radius: 0.25rem; }
 
 .progress-bar {
@@ -12307,7 +12307,7 @@ a.close.disabled {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #000000;
+  background-color: #ff5aa4;
   background-clip: padding-box;
   border: 1px solid #2c2e33;
   border-radius: 0.3rem;
@@ -15761,7 +15761,7 @@ code {
 
 /* Footer */
 .footer {
-  background: #000000;
+  background: #ff5aa4;
   padding: 20px 1rem;
   transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
@@ -17921,7 +17921,7 @@ div.tagsinput {
     color: #ffffff; }
 
 .nav-tabs .nav-link {
-  background: #000000;
+  background: #ff5aa4;
   color: #ffffff;
   border-radius: 0;
   border: 1px solid #2c2e33;
@@ -19577,7 +19577,7 @@ body.avgrund-active {
 .select2-container--default .select2-dropdown,
 .select2-container--default .select2-selection--multiple {
   border-color: #2c2e33;
-  background: #000000; }
+  background: #ff5aa4; }
   .select2-container--default .select2-selection--single .select2-search__field,
   .select2-container--default .select2-dropdown .select2-search__field,
   .select2-container--default .select2-selection--multiple .select2-search__field {
@@ -19754,7 +19754,7 @@ div.tagsinput {
   width: 100%;
   margin: 12px 0;
   padding: 8px 0;
-  background-color: #000000;
+  background-color: #ff5aa4;
   border: 1px solid #2c2e33;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -21126,7 +21126,7 @@ div.tagsinput {
       width: 100%; } }
 
 .content-wrapper {
-  background: #000000;
+  background: #ff5aa4;
   padding: 1.875rem 1.75rem;
   width: 100%;
   -webkit-flex-grow: 1;
