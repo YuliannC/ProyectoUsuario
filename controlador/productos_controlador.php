@@ -15,7 +15,7 @@ class productos_controlador{
     }
     //FUNCION UNIR CONTENIDO FRM REGISTRO
     public function frmRegistrar(){
-       $this->vista->unirContenido("productos/frmRegistro");
+       $this->vista->unirContenido("productos/frmRegistro",false);
     }
     //FUNCION UNIR CONTENIDO CARRITO
     public function vercarrito(){

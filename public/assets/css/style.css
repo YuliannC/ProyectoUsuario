@@ -8738,10 +8738,10 @@ pre {
   border-color: #818181; }
 
 .table-hover .table-dark:hover {
-  background-color: black; }
+  background-color: #323131; }
   .table-hover .table-dark:hover > td,
   .table-hover .table-dark:hover > th {
-    background-color: black; }
+    background-color: #323131; }
 
 .table-active,
 .table-active > th,
@@ -9503,12 +9503,12 @@ fieldset:disabled .wizard > .actions a,
   border-color: #0d0d0d; }
   .btn-dark:hover {
     color: #fff;
-    background-color: black;
-    border-color: black; }
+    background-color: #323131;
+    border-color: #323131; }
   .btn-dark:focus, .btn-dark.focus {
     color: #fff;
-    background-color: black;
-    border-color: black;
+    background-color: #323131;
+    border-color: #323131;
     box-shadow: 0 0 0 0.2rem rgba(49, 49, 49, 0.5); }
   .btn-dark.disabled, .btn-dark:disabled {
     color: #fff;
@@ -9517,8 +9517,8 @@ fieldset:disabled .wizard > .actions a,
   .btn-dark:not(:disabled):not(.disabled):active, .btn-dark:not(:disabled):not(.disabled).active,
   .show > .btn-dark.dropdown-toggle {
     color: #fff;
-    background-color: black;
-    border-color: black; }
+    background-color: #323131;
+    border-color: #323131; }
     .btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus,
     .show > .btn-dark.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(49, 49, 49, 0.5); }
@@ -9787,7 +9787,7 @@ input[type="button"].btn-block {
   color: #ffffff;
   text-align: left;
   list-style: none;
-  background-color: #191c24;
+  background-color: #323131;
   background-clip: padding-box;
   border: 1px solid #2c2e33;
   border-radius: 0.25rem; }
@@ -11103,8 +11103,8 @@ input[type="button"].btn-block {
   .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
     color: #ffffff;
-    background-color: black;
-    border-color: #2c2e33 #2c2e33 black; }
+    background-color: #323131;
+    border-color: #2c2e33 #2c2e33 #323131; }
   .nav-tabs .dropdown-menu {
     margin-top: -1px;
     border-top-left-radius: 0;
@@ -11399,7 +11399,7 @@ input[type="button"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #191c24;
+  background-color: #323131;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem; }
@@ -11791,7 +11791,7 @@ input[type="button"].btn-block {
   background-color: #0d0d0d; }
   a.badge-dark:hover, a.badge-dark:focus {
     color: #fff;
-    background-color: black; }
+    background-color: #323131; }
   a.badge-dark:focus, a.badge-dark.focus {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(13, 13, 13, 0.5); }
@@ -11903,7 +11903,7 @@ input[type="button"].btn-block {
   .alert-dark hr {
     border-top-color: #aeaeae; }
   .alert-dark .alert-link {
-    color: black; }
+    color: #323131; }
 
 @keyframes progress-bar-stripes {
   from {
@@ -12586,7 +12586,7 @@ a.close.disabled {
   margin-bottom: 0;
   font-size: 1rem;
   background-color: #0d0d0d;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #323131;
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px); }
   .popover-header:empty {
@@ -12868,7 +12868,7 @@ button.bg-light:focus {
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
-  background-color: black !important; }
+  background-color: #323131 !important; }
 
 .bg-white {
   background-color: #ffffff !important; }
@@ -15204,7 +15204,7 @@ a.text-light:hover, a.text-light:focus {
   color: #0d0d0d !important; }
 
 a.text-dark:hover, a.text-dark:focus {
-  color: black !important; }
+  color: #323131 !important; }
 
 .text-body {
   color: #ffffff !important; }
@@ -15716,7 +15716,7 @@ body,
 html {
   overflow-x: hidden;
   padding-right: 0 !important;
-  background-color: #191c24; }
+  background-color: #323131; }
 
 *:-moz-full-screen,
 *:-webkit-full-screen,
@@ -16751,7 +16751,7 @@ code {
       -ms-transform: scale(1);
       -o-transform: scale(1);
       transform: scale(1);
-      color: black; }
+      color: #323131; }
     .form-check .form-check-label input[type="checkbox"]:disabled + .input-helper:before {
       border-color: #2c2e33; }
     .form-check .form-check-label input[type="checkbox"]:disabled:checked + .input-helper:after {
@@ -19027,7 +19027,7 @@ body.avgrund-active {
     color: #ffffff; }
 
 .fc-external-events .fc-event {
-  background: #191c24;
+  background: #323131;
   color: #ffffff;
   border-width: 0 0 0 4px;
   padding: 16px;
@@ -19796,7 +19796,7 @@ div.tagsinput {
   font-size: 1rem; }
 
 .wysi-editor textarea:focus {
-  color: black;
+  color: #323131;
   border: 1px solid #2c2e33; }
 
 .wysi-editor .wysihtml-action-active,
@@ -20340,7 +20340,7 @@ div.tagsinput {
 /* Navbar */
 .navbar {
   font-weight: normal;
-  background: #191c24;
+  background: #323131;
   left: 244px;
   transition: left 0.25s ease;
   -webkit-transition: left 0.25s ease;
@@ -20354,7 +20354,7 @@ div.tagsinput {
     -webkit-transition: width 0.25s ease, background 0.25s ease;
     -moz-transition: width 0.25s ease, background 0.25s ease;
     -ms-transition: width 0.25s ease, background 0.25s ease;
-    background: #191c24;
+    background: #323131;
     width: 244px;
     height: 70px; }
     @media (max-width: 991px) {
@@ -20450,7 +20450,7 @@ div.tagsinput {
       .navbar .navbar-menu-wrapper .count-indicator .count-number {
         position: absolute;
         border-radius: 100%;
-        border: 2px solid #191c24; }
+        border: 2px solid black; }
       .navbar .navbar-menu-wrapper .count-indicator .count-symbol {
         top: 17px;
         right: -3px;
@@ -20519,9 +20519,9 @@ div.tagsinput {
             top: 48px;
             right: 0;
             left: auto;
-            -webkit-box-shadow: 0px 0px 35px -3px black;
-            -moz-box-shadow: 0px 0px 35px -3px black;
-            box-shadow: 0px 0px 35px -3px black;
+            -webkit-box-shadow: 0px 0px 35px -3px #323131;
+            -moz-box-shadow: 0px 0px 35px -3px #323131;
+            box-shadow: 0px 0px 35px -3px #323131;
             padding: 0; }
             .rtl .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .dropdown-menu.navbar-dropdown {
               right: auto;
@@ -20591,7 +20591,7 @@ div.tagsinput {
             margin-left: 0;
             margin-right: auto; } }
     .navbar .navbar-menu-wrapper .search input {
-      background: #191c24;
+      background: #323131;
       padding: 13px 20px 11px 20px;
       border: 1px solid #2c2e33; }
       .navbar .navbar-menu-wrapper .search input::placeholder {
@@ -20623,7 +20623,7 @@ div.tagsinput {
 /* Sidebar */
 .sidebar {
   min-height: calc(100vh - 70px);
-  background: #191c24;
+  background: #323131;
   font-weight: normal;
   padding: 0;
   width: 244px;
@@ -20637,7 +20637,7 @@ div.tagsinput {
     -webkit-transition: width 0.25s ease, background 0.25s ease;
     -moz-transition: width 0.25s ease, background 0.25s ease;
     -ms-transition: width 0.25s ease, background 0.25s ease;
-    background: #191c24;
+    background: #323131;
     width: 244px;
     height: 70px; }
     @media (max-width: 991px) {
@@ -20814,7 +20814,7 @@ div.tagsinput {
               .sidebar .nav .nav-item.profile .profile-desc .profile-pic .count-indicator .count-number {
                 position: absolute;
                 border-radius: 100%;
-                border: 2px solid #191c24; }
+                border: 2px solid black; }
               .sidebar .nav .nav-item.profile .profile-desc .profile-pic .count-indicator .count-symbol {
                 top: 17px;
                 right: -3px;
@@ -21051,7 +21051,7 @@ div.tagsinput {
           left: 70px;
           width: 190px; }
           .sidebar-dark.sidebar-icon-only .sidebar .nav .nav-item.hover-open .collapse, .sidebar-dark.sidebar-icon-only .sidebar .nav .nav-item.hover-open .collapsing {
-            background: #191c24; }
+            background: #323131; }
           .rtl.sidebar-icon-only .sidebar .nav .nav-item.hover-open .collapse, .rtl.sidebar-icon-only .sidebar .nav .nav-item.hover-open .collapsing {
             left: auto;
             right: 70px;
