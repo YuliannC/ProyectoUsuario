@@ -28,7 +28,7 @@ class cliente_controlador{
     //FUNCION UNIR CONTENIDO LISTAR
     public function listar(){
         $this->vista->datos = cliente_modelo::mdlListar();
-        $this->vista->unirContenido("cliente/listar");
+        $this->vista->unirContenido("cliente/listar",false);
     }
     //FUNCION UNIR CONTENIDO FRM REGISTRO
     public function frmRegistro(){

@@ -57,7 +57,7 @@ class productos_controlador{
     }
     //FUNCION UNIR CONTENIDO LISTA DE PRODUCTOS
     public function listarProduct(){
-        $this->vista->unirContenido("productos/listadoProductos");
+        $this->vista->unirContenido("productos/listadoProductos",false);
     }
     //FUNCION REGISTRAR PRODUCTOS
     public function registrar(){

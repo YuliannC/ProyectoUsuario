@@ -1,5 +1,5 @@
 <?php
-include('conexion2.php');
+include('confi.php');
 
 if(isset($_POST['Guardar'])){
     $imagen = $_FILES['imagen']['name'];
@@ -26,7 +26,7 @@ if(isset($_POST['Guardar'])){
               move_uploaded_file($temp,'imagenes/'.$imagen);   
              $_SESSION['mensaje'] = 'se ha subido correctamente';
              $_SESSION['tipo'] = 'success';
-             header('location:../?controlador=productos&accion=vercarrito');
+             header('location:../?controlador=compras&accion=productos');
          }else{
              $_SESSION['mensaje'] = 'ocurrio un error en el servidor';
              $_SESSION['tipo'] = 'danger';

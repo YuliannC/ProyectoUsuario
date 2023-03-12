@@ -371,68 +371,36 @@
         <!-- partial --> <div class="main-panel">
           <div class="content-wrapper">
             <div class="row">
+              <div class="col-12 grid-margin stretch-card">
+                  <div class="card-body py-0 px-0 px-sm-3">
+                    <div class="row align-items-center">
+                      <div class="col-4 col-sm-3 col-xl-2">
                         </div>
-                        <?php 
-                        include('recursos/confi.php');
-                        $query = "select * from imagenes";
-                        $resultado = mysqli_query($conn,$query);
-                      ?>
-                        <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Registrar un nuevo usuario</h4>
-                    <p class="card-description">Aesthetic 90s mc</p>
-                    <form action="recursos/subir.php" method="post" enctype="multipart/form-data" class="forms-sample">
-                    <div class="form-group">
-                        <label>Seleccione una Imagen</label>
-                        <input type="file" id="my-input"  name="imagen"class="form-control file-upload-info">
-                      </div>
-                      <div class="form-group">
-                        <label for="">Nombre del producto</label>
-                        <input type="text" class="form-control" id="my-input"  name="titulo" placeholder="Ingresar nombre del producto">
-                      </div>
-                      <div class="form-group">
-                        <label for="">Cantidad</label>
-                        <input type="number" class="form-control" id="my-input"  name="cantidad" placeholder="Ingresar cantidad del producto">
-                      </div>
-                      <div class="form-group">
-                        <label for="">Precio</label>
-                        <input type="number" class="form-control" id="my-input"  name="precio" placeholder="Ingresar precio del producto">
-                      </div>
-                      <div class="form-group">
-                        <label for="">Color</label>
-                        <input type="text" class="form-control" id="my-input"  name="color" placeholder="Ingresar color del producto">
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleSelectGender">Seccion</label>
-                        <select class="form-control"  name="secciones" id="seccion">
-                      <option value="pant">pant</option>
-                      <option value="corset">corset</option>
-                      <option value="falda">falda</option>
-                      <option value="vestido">vestido</option>
-                      <option value="chaqueta">chaqueta</option>
-                      <option value="conjunto">conjunto</option>
-                        </select>
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleTextarea1">Descripcion</label>
-                        <textarea class="form-control" id="exampleTextarea1" rows="4" id="my-input" name="descripcion" placeholder="Ingresar descripcion del producto"></textarea>
-                      </div>
-                      <?php if(isset($_SESSION['mensaje'])){ ?>
-          <div class="alert alert-<?php echo $_SESSION['tipo'] ?> alert-dismissible fade show" role="alert">
-         <strong><?php echo $_SESSION['mensaje']; ?></strong> 
-       <button type="button" class="promo_link" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-     </button>
-       </div>
-          <?php session_unset(); } ?>
-          <input type="submit" value="aceptar" class="btn btn-primary" name="Guardar">
-
-                    </form>
-                  </div>
-                </div>
-
-                      </div>
-                    </div> 
+<?php 
+  include('recursos/confi.php');
+  include('recursos/configuracion.php');
+  $query = "select * from imagenes";
+  $resultado = mysqli_query($conn,$query);
+?>
+ <?php
+   echo "<div class='row'>"; 
+   foreach($resultado as $row){ ?>
+    <div class="col-lg-3">
+      <div class="card">
+        <a href="?controlador=productos&accion=detalles&id=<?php echo $row['cod_imagen']; ?>">
+          <img src="public/images/productos/<?php echo $row['imagen']; ?>" class="card-img-top" style="height:50%;">
+        </a>
+        <div class="card-body" style="text-align:center; padding:1px;" >
+          <h2 class="card-title" style="color:black;"><?php echo $row['nombre']; ?></h2>
+          <p class="card-text"><strong><?php echo MONEDA . number_format($row['precio'], 0, '.', ','); ?></strong></p>
+          <a href="?controlador=productos&accion=eliminar&id=<?php echo $row['cod_imagen'];?>" class="eliminar btn btn-danger" style="width:90%;" >Eliminar</a>
+          <br>
+          <a href="?controlador=productos&accion=frmEditar&id=<?php echo $row['cod_imagen'];?>" class="btn btn-info" style="width:90%;">Editar producto</a>
+          </div>
+      </div>
+    </div>
+  <?php }?>
+  </div>
                   </div>
                 </div>
               </div>

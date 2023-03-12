@@ -372,66 +372,47 @@
           <div class="content-wrapper">
             <div class="row">
                         </div>
-                        <?php 
-                        include('recursos/confi.php');
-                        $query = "select * from imagenes";
-                        $resultado = mysqli_query($conn,$query);
-                      ?>
+
                         <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Registrar un nuevo usuario</h4>
-                    <p class="card-description">Aesthetic 90s mc</p>
-                    <form action="recursos/subir.php" method="post" enctype="multipart/form-data" class="forms-sample">
-                    <div class="form-group">
-                        <label>Seleccione una Imagen</label>
-                        <input type="file" id="my-input"  name="imagen"class="form-control file-upload-info">
-                      </div>
-                      <div class="form-group">
-                        <label for="">Nombre del producto</label>
-                        <input type="text" class="form-control" id="my-input"  name="titulo" placeholder="Ingresar nombre del producto">
-                      </div>
-                      <div class="form-group">
-                        <label for="">Cantidad</label>
-                        <input type="number" class="form-control" id="my-input"  name="cantidad" placeholder="Ingresar cantidad del producto">
-                      </div>
-                      <div class="form-group">
-                        <label for="">Precio</label>
-                        <input type="number" class="form-control" id="my-input"  name="precio" placeholder="Ingresar precio del producto">
-                      </div>
-                      <div class="form-group">
-                        <label for="">Color</label>
-                        <input type="text" class="form-control" id="my-input"  name="color" placeholder="Ingresar color del producto">
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleSelectGender">Seccion</label>
-                        <select class="form-control"  name="secciones" id="seccion">
-                      <option value="pant">pant</option>
-                      <option value="corset">corset</option>
-                      <option value="falda">falda</option>
-                      <option value="vestido">vestido</option>
-                      <option value="chaqueta">chaqueta</option>
-                      <option value="conjunto">conjunto</option>
-                        </select>
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleTextarea1">Descripcion</label>
-                        <textarea class="form-control" id="exampleTextarea1" rows="4" id="my-input" name="descripcion" placeholder="Ingresar descripcion del producto"></textarea>
-                      </div>
-                      <?php if(isset($_SESSION['mensaje'])){ ?>
-          <div class="alert alert-<?php echo $_SESSION['tipo'] ?> alert-dismissible fade show" role="alert">
-         <strong><?php echo $_SESSION['mensaje']; ?></strong> 
-       <button type="button" class="promo_link" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-     </button>
-       </div>
-          <?php session_unset(); } ?>
-          <input type="submit" value="aceptar" class="btn btn-primary" name="Guardar">
-
-                    </form>
+                    <h4 class="card-title">Listado de clientes</h4>
+                    <p class="card-description">Aesthetic 90s mc
+                    </p>
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th> Nombres </th>
+                            <th> Apellidos </th>
+                            <th> Telefono </th>
+                            <th> Correo </th>
+                            <th>  </th>
+                            <th>  </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                          <?php
+                            foreach($this->datos as $valor){
+                              $id = $valor["USU_ID"];
+                              echo "<tr>";
+                            echo "<td>".$valor["USU_NOMBRES"]."</td>";
+                            echo"<td>".$valor["USU_APELLIDOS"]. "</td>";
+                            echo"<td>".$valor["USU_TELEFONO"]. "</td>";
+                            echo"<td>".$valor["USU_CORREO"]. "</td>";
+                            echo "<td class='aling-middle text-center'><a  href='?controlador=cliente&accion=frmEditar&cli_id=$id'class='btn btn-info'>
+                                  Editar</a></td>";
+                            echo "<td class='aling-middle text-center'><a href='?controlador=cliente&accion=eliminar&cli_id=$id'class='btn btn-danger'>
+                                  Eliminar</a></td>";
+                            echo "</tr>";
+                          }
+                          ?>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                 </div>
-
-                      </div>
+              </div>
                     </div> 
                   </div>
                 </div>
