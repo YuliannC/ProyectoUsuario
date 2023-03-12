@@ -5,7 +5,7 @@ class conexion{
         private $c; 
         private $usuario ="root"; 
         private $password =""; 
-        private $host ="mysql:host=localhost;dbname=aesthetic90mc;port=3306";
+        private $host ="mysql:host=localhost;dbname=aesthetic90mc1;port=3306";
 
 
          public function __construct(){ 

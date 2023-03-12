@@ -56,7 +56,6 @@ class cliente_modelo{
         $s = $c->prepare($sql);
         $v = array($datos);        
         return $s->execute($v);
-    
       }
       public static function mdlconsultarByApe($apellidos){
         $o = new conexion();

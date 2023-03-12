@@ -26,10 +26,36 @@ class administrador_modelo{
     public static function mdlListar(){
       $o = new conexion();
       $c = $o->getConexion();
-      $sql = "SELECT * FROM t_contacto";
+      $sql = "SELECT * FROM t_contacto where CON_ESTADO=1";
       $s = $c->prepare($sql); 
       $s->execute();  
       return $s->fetchAll();
+    }
+     //FUNCION MODELO LISTAR
+     public static function mdlListarpedido(){
+      $o = new conexion();
+      $c = $o->getConexion();
+      $sql = "SELECT * FROM cart_product join cart join imagenes where cart_estado= 2 and cod_imagen=product_id";
+      $s = $c->prepare($sql); 
+      $s->execute();  
+      return $s->fetchAll();
+    }
+    public static function mdlEliminarcontactanos($datos){
+      $o = new conexion();
+      $c = $o->getConexion();
+      $sql = "UPDATE t_contacto SET CON_ESTADO = 2 WHERE CON_ID = ?";
+      $s = $c->prepare($sql);
+      $v = array($datos);        
+      return $s->execute($v);
+    }
+    public static function mdlEliminar($datos){
+      $o = new conexion();
+      $c = $o->getConexion();
+      $sql = "UPDATE cart_product SET cart_estado = 2 WHERE id = ?";
+      $s = $c->prepare($sql);
+      $v = array($datos);        
+      return $s->execute($v);
+  
     }
     //FUNCION MODELO DETALLE
     public static function mdlDetalles($id){

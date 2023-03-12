@@ -132,7 +132,7 @@ $sidebar-dark-bg: black;
 $sidebar-dark-menu-color: $text-muted;
 $sidebar-dark-menu-active-bg: darken($sidebar-dark-bg, 5%);
 $sidebar-dark-menu-active-color: #ffffff;
-$sidebar-dark-menu-hover-bg: darken($sidebar-dark-bg, 5%);
+#ff5aa4: darken($sidebar-dark-bg, 5%);
 $sidebar-dark-menu-hover-color: color(white);
 $sidebar-dark-submenu-color: $sidebar-dark-menu-color;
 $sidebar-dark-submenu-hover-bg: initial;
@@ -167,8 +167,8 @@ $sidebar-icon-only-submenu-padding: 0 0 0 1.5rem;
 $rtl-sidebar-submenu-padding: 0 1.5rem 0 0;
 
 $icon-only-collapse-width: 190px;
-$icon-only-menu-bg-light: $sidebar-dark-menu-hover-bg;
-$icon-only-menu-bg-dark: $sidebar-dark-menu-hover-bg;
+$icon-only-menu-bg-light: #ff5aa4;
+$icon-only-menu-bg-dark: #ff5aa4;
 
 $navbar-box-shadow: 20px 19px 34px -15px rgba(0,0,0,0.5);
 $navbar-box-shadow-rtl: -34px 19px 34px -15px $content-bg;

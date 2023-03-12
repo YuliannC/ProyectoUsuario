@@ -134,7 +134,7 @@
 
       &.active {
         > .nav-link {
-          background: $sidebar-dark-menu-active-bg;
+          background-color: #ff5aa4;
           position: relative;
           &:before {
             content: "";
@@ -366,7 +366,7 @@
         &:hover {
           &:not(.nav-category):not(.account-dropdown) {
             >.nav-link {
-              background: $sidebar-dark-menu-hover-bg;
+              background: #ff5aa4;
               color: $sidebar-dark-menu-hover-color;
             }
           }

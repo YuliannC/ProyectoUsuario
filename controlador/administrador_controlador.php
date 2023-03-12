@@ -1,13 +1,12 @@
 <?php
 require_once "modelo/administrador_modelo.php";
 class administrador_controlador{
-    // FUNCION UNIR LA ESTRUCTURA
+    //FUNCION UNIR LA ESTRUCTURA
     public function __construct(){
         $this->vista= new  estructura();
         //  if(!isset($_SESSION["USU_ID"])){
         //     header("location: /AESTHETIC90SMC");
         // }
-
     }
     // FUNCION UNIR CONTENIDO
     public function  principal(){
@@ -18,7 +17,7 @@ class administrador_controlador{
     //FUNCION LISTAR PQR(PETICIONES,QUEJAS Y SUGERENCSIAS)
     public function  listarPQR(){
         $this->vista->datos = administrador_modelo::mdlListar();
-        $this->vista->unirContenido("administrador/pqr");
+        $this->vista->unirContenido("administrador/pqr",false);
         
     }
     //FUNCION UNIR REGISTRO
@@ -38,6 +37,10 @@ class administrador_controlador{
        //  if($_SESSION['CLI_ROL'] == "Administrador" ||
        //         $_SESSION['CLI_ROL'] == "Mecanico")
     }
+    public function verpedidos(){
+        $this->vista->datos = administrador_modelo::mdlListarpedido();
+        $this->vista->unirContenido("administrador/pedido",false);
+    }
     //FUNCION UNIR REGISTRO DE PQR(PETICIONES,QUEJAS Y SUGERENCIIAS)
     public function registrarPqr(){
         extract($_POST);
@@ -55,6 +58,25 @@ class administrador_controlador{
             echo json_encode(array("mensaje" => "Error al registrar PQR",
                         "icono"=> "error"));
         }
-    }  
+    } 
+    //FUNCION ELIMINAR USUARIO(NO ELIMINA,SOLO DESACTIVA Y ACTIVA AL USUARIO)
+  public function eliminar(){
+    $id = $_GET["cli_id"];
+    $e=administrador_modelo::mdleliminar($id);
+    if($e > 0){
+        echo json_encode(array("mensaje" => "Se finalizo el pedido" , "icono"=>"success"));
+    }else{
+        echo json_encode(array("mensaje" => "No se finalizo el pedido" , "icono"=>"error"));
+    }
+  } 
+  public function eliminarcontacto(){
+    $id = $_GET["cli_id"];
+    $e=administrador_modelo::mdlEliminarcontactanos($id);
+    if($e > 0){
+        echo json_encode(array("mensaje" => "Se finalizo el pedido" , "icono"=>"success"));
+    }else{
+        echo json_encode(array("mensaje" => "No se finalizo el pedido" , "icono"=>"error"));
+    }
+  } 
 }
 ?>

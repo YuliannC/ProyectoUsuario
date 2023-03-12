@@ -71,45 +71,45 @@
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="?controlador=cliente&accion=principal">Inicio</a></li>
-                <li class="nav-item"> <a class="nav-link" href="?controlador=cliente&accion=frmRegistrar">Registrar</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">reporte</a></li>
+                <li class="nav-item"> <a class="nav-link" href="?controlador=cliente&accion=frmRegistro">Registrar</a></li>
+                <li class="nav-item"> <a class="nav-link" href="?controlador=cliente&accion=listar">Listado</a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
               <span class="menu-icon">
-                <i class="mdi mdi-laptop"></i>
+                <i class="mdi mdi-security"></i>
               </span>
               <span class="menu-title">Proveedores</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="ui-basic">
+            <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="?controlador=proveedores&accion=principal">Inicio</a></li>
-                <li class="nav-item"> <a class="nav-link" href="?controlador=proveedores&accion=frmRegistrar">Registrar</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">reporte</a></li>
-              </ul>
-            </div>
-          </li>
-           <li class="nav-item menu-items">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <span class="menu-icon">
-                <i class="mdi mdi-laptop"></i>
-              </span>
-              <span class="menu-title">Productos</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="ui-basic">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="?controlador=productos&accion=principal">Inicio</a></li>
-                <li class="nav-item"> <a class="nav-link" href="?controlador=productos&accion=frmRegistrar">Registrar</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">reporte</a></li>
+                <li class="nav-item"> <a class="nav-link" href="?controlador=proveedores&accion=principal"> Inicio </a></li>
+                <li class="nav-item"> <a class="nav-link" href="?controlador=proveedores&accion=frmRegistrar"> Registrar </a></li>
+                <li class="nav-item"> <a class="nav-link" href="?controlador=proveedores&accion=listarProduct"> Listado </a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="pages/charts/chartjs.html">
+            <a class="nav-link" data-toggle="collapse" href="#auth1" aria-expanded="false" aria-controls="auth">
+              <span class="menu-icon">
+                <i class="mdi mdi-security"></i>
+              </span>
+              <span class="menu-title">Producto</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth1">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="?controlador=productos&accion=principal"> Inicio </a></li>
+                <li class="nav-item"> <a class="nav-link" href="?controlador=productos&accion=frmRegistrar"> Registrar </a></li>
+                <li class="nav-item"> <a class="nav-link" href="?controlador=productos&accion=listarProduct"> Listado </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="?controlador=administrador&accion=frmEditar">
               <span class="menu-icon">
                 <i class="mdi mdi-chart-bar"></i>
               </span>
@@ -117,7 +117,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="pages/icons/mdi.html">
+            <a class="nav-link" href="?controlador=administrador&accion=verpedidos">
               <span class="menu-icon">
                 <i class="mdi mdi-contacts"></i>
               </span>
@@ -125,7 +125,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="pages/icons/mdi.html">
+            <a class="nav-link" href="?controlador=administrador&accion=listarPQR">
               <span class="menu-icon">
                 <i class="mdi mdi-contacts"></i>
               </span>
@@ -133,11 +133,11 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="pages/icons/mdi.html">
+            <a class="nav-link" href="?controlador=administrador&accion=listarPQR">
               <span class="menu-icon">
                 <i class="mdi mdi-contacts"></i>
               </span>
-              <span class="menu-title">Ver productos</span>
+              <span class="menu-title">Ver PQRS</span>
             </a>
           </li>
         </ul>
@@ -153,13 +153,6 @@
             <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
               <span class="mdi mdi-menu"></span>
             </button>
-            <ul class="navbar-nav w-100">
-              <li class="nav-item w-100">
-                <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
-                  <input type="text" class="form-control" placeholder="Search products">
-                </form>
-              </li>
-            </ul>
             <ul class="navbar-nav navbar-nav-right">
               <li class="nav-item dropdown border-left">
                 <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">

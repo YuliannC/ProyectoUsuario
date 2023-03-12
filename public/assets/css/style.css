@@ -20735,7 +20735,7 @@ div.tagsinput {
           margin-right: auto;
           margin-left: 1rem; }
       .sidebar .nav .nav-item.active > .nav-link {
-        background: #0f1015;
+        background: #ff5aa4;
         position: relative; }
         .sidebar .nav .nav-item.active > .nav-link:before {
           content: "";
@@ -20909,7 +20909,7 @@ div.tagsinput {
         .sidebar .nav.sub-menu .nav-item:hover {
           background: transparent; }
     .sidebar .nav:not(.sub-menu) > .nav-item:hover:not(.nav-category):not(.account-dropdown) > .nav-link {
-      background: #0f1015;
+      background: #ff5aa4;
       color: #ffffff; }
     .sidebar .nav .menu-items:nth-child(5n+1) .nav-link .menu-icon i {
       color: #0090e7; }
@@ -20942,19 +20942,19 @@ div.tagsinput {
   .sidebar-tinted .sidebar .sidebar-brand-wrapper {
     background: #fa424a; }
   .sidebar-tinted .sidebar .nav .nav-item .nav-link {
-    color: #ffffff; }
+    color: #ff5aa4; }
     .sidebar-tinted .sidebar .nav .nav-item .nav-link .menu-icon i {
       color: white; }
     .sidebar-tinted .sidebar .nav .nav-item .nav-link i.menu-arrow {
       color: rgba(255, 255, 255, 0.36); }
   .sidebar-tinted .sidebar .nav .nav-item.active > .nav-link {
-    background: rgba(12, 14, 14, 0.1); }
+    background: #ff5aa4; }
   .sidebar-tinted .sidebar .nav .nav-item.active:before {
-    background: #ffffff; }
+    background: #ff5aa4; }
   .sidebar-tinted .sidebar .nav .nav-item.profile .profile-desc .profile-name span {
-    color: #ffffff; }
+    color: #ff5aa4; }
   .sidebar-tinted .sidebar .nav .nav-item.profile .profile-desc .mdi-dots-vertical {
-    color: #ffffff; }
+    color: #ff5aa4; }
   .sidebar-tinted .sidebar .nav .nav-item.profile .profile-pic .count-indicator .count {
     border: 2px solid #fa424a; }
   .sidebar-tinted .sidebar .nav.sub-menu .nav-item .nav-link:hover {
@@ -21023,7 +21023,7 @@ div.tagsinput {
           display: flex;
           -webkit-align-items: center;
           align-items: center;
-          background: #0f1015;
+          background: #ff97d9;
           padding: 0.5rem 1.4rem;
           left: 70px;
           position: absolute;
@@ -21034,7 +21034,7 @@ div.tagsinput {
           z-index: 1;
           line-height: 1.8; }
           .sidebar-dark.sidebar-icon-only .sidebar .nav .nav-item.hover-open .nav-link .menu-title {
-            background: #0f1015; }
+            background: #ff97d9; }
           .rtl.sidebar-icon-only .sidebar .nav .nav-item.hover-open .nav-link .menu-title {
             left: auto;
             right: 70px;
@@ -21045,7 +21045,7 @@ div.tagsinput {
         .sidebar-icon-only .sidebar .nav .nav-item.hover-open .collapsing {
           display: block;
           padding: .5rem 0;
-          background: #0f1015;
+          background: #ff97d9;
           border-radius: 0 0 5px 0;
           position: absolute;
           left: 70px;

@@ -22,6 +22,7 @@
     <!-- End layout styles -->
     <link rel="shortcut icon" href="public/assets/images/favicon.png" />
   </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <body>
     <div class="container-scroller">
       <!-- partial:partials/_sidebar.html -->
@@ -375,19 +376,18 @@
 
                         <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Listado de clientes</h4>
+                    <h4 class="card-title">Listado de Pedidos</h4>
                     <p class="card-description">Aesthetic 90s mc
                     </p>
                     <div class="table-responsive">
                       <table class="table table-striped">
                         <thead>
                           <tr>
-                            <th> Nombres </th>
-                            <th> Apellidos </th>
-                            <th> Telefono </th>
-                            <th> Correo </th>
-                            <th> Descripcion </th>
-                            <th> estado </th>
+                            <th> Id del productos </th>
+                            <th> Producto </th>
+                            <th> cantidad </th>
+                            <th> Direccion </th>
+                            <th> Fecha y hora  </th>
                             <th>  </th>
                             <th>  </th>
                           </tr>
@@ -396,16 +396,15 @@
                           <tr>
                           <?php
                             foreach($this->datos as $valor){
-                              $id = $valor["CON_ID"];
+                              $id = $valor["id"];
                               echo "<tr>";
-                            echo "<td>".$valor["CON_NOMBRES"]."</td>";
-                            echo"<td>".$valor["CON_APELLIDO"]. "</td>";
-                            echo"<td>".$valor["CON_TELEFONO"]. "</td>";
-                            echo"<td>".$valor["CON_CORREO"]. "</td>";
-                            echo"<td>".$valor["CON_DESCRIPCION"]. "</td>";
-                            echo"<td>".$valor["CON_ESTADO"]. "</td>";
-                            echo "<td class='aling-middle text-center'><a href='?controlador=administrador&accion=eliminarcontacto&cli_id=$id' class='eliminar btn btn-info'>
-                            Solucionado</a></td>";
+                            echo "<td>".$valor["product_id"]."</td>";
+                            echo"<td>".$valor["nombre"]. "</td>";
+                            echo"<td>".$valor["q"]. "</td>";
+                            echo"<td>".$valor["client_email"]. "</td>";
+                            echo"<td>".$valor["created_at"]. "</td>";
+                            echo "<td class='aling-middle text-center'><a href='?controlador=administrador&accion=eliminar&cli_id=$id'class='eliminar btn btn-danger'>
+                            Pedido enviado</a></td>";
                             echo "</tr>";
                           }
                           ?>
@@ -453,6 +452,7 @@
     <!-- endinject -->
     <!-- Custom js for this page -->
     <script src="public/assets/js/dashboard.js"></script>
+    <script src="public/js/scripts.js"></script>
     <!-- End custom js for this page -->
   </body>
 </html>
